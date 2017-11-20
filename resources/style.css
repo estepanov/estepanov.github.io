@@ -9,6 +9,10 @@ body {
     background-attachment: fixed; 
 }
 
+#whatIamIconWrapper {
+    position: relative;
+}
+
 .space-between {
     justify-content: space-between;
 }

@@ -9,6 +9,10 @@ body {
     background-attachment: fixed; 
 }
 
+.black-bg {
+    background-color: black;
+}
+
 #curtain {
     background-color: black;
     position: absolute;
@@ -26,6 +30,7 @@ body {
 }
 
 #typed {
+    font-family: Courier;
 }
 
 .space-between {
