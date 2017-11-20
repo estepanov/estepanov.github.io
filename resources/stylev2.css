@@ -6,7 +6,7 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-attachment: fixed; 
+    background-attachment: fixed;
 }
 
 .black-bg {
@@ -52,13 +52,15 @@ body {
     margin: 1em;
     color: white;
     font-size: 2.5em;
-    /* -webkit-flex-direction: column;
+    -webkit-flex-direction: column;
     flex-direction: column;
     align-content: center;
     align-items: center;
-    justify-content: space-between; */
+    justify-content: space-between;
+}
 
-
+.floaters a span {
+    font-family: 'Bungee', cursive;
 }
 
 .floaters a:link, .floaters a:visited{
@@ -67,7 +69,6 @@ body {
     align-items: flex-start;
     color: white;
     text-decoration: none;
-    
 }
 
 .spacer {
@@ -81,7 +82,7 @@ body {
 }
 
 .spacer h1 {
-    
+
     color: white;
     margin: 0.2em;
     padding: 0px;
@@ -132,10 +133,13 @@ body {
 }
 
 .whatIam {
+    width: 100%;
     display: flex;
-    justify-content: center;
-    align-content: center;
-    padding: 3em;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: absolute;
+    bottom: 2em;
 }
 
 .whatIam a:link {
@@ -147,20 +151,8 @@ body {
     font-family: 'Permanent Marker', cursive;
     color: white;
     font-size: 2.5em;
-    position: relative;
-    top:120px;
-    left: -90px;
     margin: 0;
     padding: 0;
-}
-
-.meteor {
-    position: absolute;
-    background-image: url('./images/meteor1.png');
-    height: 100px;
-    width: 100px;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
 
 .row {
@@ -169,7 +161,7 @@ body {
     flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between
-    
+
 }
 
 .white-line-bg {
@@ -189,20 +181,9 @@ body {
     padding: 0px;
 }
 
-#arrowBounce {
-    font-size: 4em;
-    color: white;
-    align-content: center;
-    width: 100vw;
-    position: absolute;
-    display: flex;
-    bottom: 0em;
-    justify-content: center;
-}
 
-
-@media only screen 
-and (min-device-width: 320px) 
+@media only screen
+and (min-device-width: 320px)
 and (max-device-width: 568px)
 and (-webkit-min-device-pixel-ratio: 2)
 and (orientation: portrait) {
@@ -232,17 +213,17 @@ and (orientation: portrait) {
     padding: 0;
     margin: 0;
     list-style: none;
-    
+
     display: -webkit-box;
     display: -moz-box;
     display: -ms-flexbox;
     display: -webkit-flex;
     display: flex;
-    
+
     -webkit-flex-flow: row wrap;
     justify-content: space-around;
 }
-  
+
 .flex-item {
     border-radius: 10px;
     background: rgba(0, 0, 0, 0.5);
@@ -250,7 +231,7 @@ and (orientation: portrait) {
     width: 500px;
     height: 500px;
     margin-top: 200px;
-    
+
     line-height: 500px;
     color: white;
     font-weight: bold;
